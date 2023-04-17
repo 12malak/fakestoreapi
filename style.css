@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#student_card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(12rem,12rem);
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#student_card div{
+    height:15rem;
+    width: 90%;
+    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#ede2d9;
+  border: 1px solid #050505;
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+}
+
+#student_card div img{
+   width: 7rem;
+   height: 4rem;
+   border: 2px solid #050505;;
+   border-radius: 1rem;
+   margin-bottom: 1rem;
+}
+
+
+ h5{
+    /* border-bottom: 1px solid black; */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    height: auto;
+    word-wrap: break-word;
+ }
+ 
+
+ @media (max-width: 768px){
+
+    #student_card{
+        grid-template-columns: repeat(2,1fr); 
+    }
+  h5{
+       
+        font-size: 0.7rem;
+        padding: 0.5rem;
+     }
+
+ }
